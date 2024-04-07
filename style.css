@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 10px;
+    background-color: #ccc;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background-color: rgba(23, 82, 82, 0.37);
+}
+
+.texto-escrito {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: escrever 2.5s steps(40, end);
+    width: 26ch;
+    font-family: monospace;
+    font-size: 14px;
+    color: #ddd;
+}
+
+@keyframes escrever {
+    from {
+        width: 0;
+    }
+}
+
+
+button {
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background-color: #ddd;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+main {
+    margin-top: 16px;
+    padding: 10px;
+}
+
+.aboutMe {
+    padding: 38px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 4px;
+    background-color: gray;
+    row-gap: 16px;
+}
+
+.jobs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 16px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background-color: gray;
+}
+
+.anuncio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.myJobs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: #ccc;
+}
+
+.myJobs img {
+    height: 200px;
+    width: 320px;
+}
+
+.myJobs {
+    font-size: 18px;
+}
+
+.tecnologias {
+    margin-top: 16px;
+    border: 1px solid #000;
+    background-color: gray;
+}
+
+.tecnologias img {
+    width: 5rem;
+    height: 6rem;
+}
+
+.icons {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: rgb(77, 102, 77);
+}
+
+.footer-icon {
+    width: 20px;
+    height: 22px;
+}
