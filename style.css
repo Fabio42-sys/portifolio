@@ -119,6 +119,7 @@ main {
 .tecnologias {
     margin-top: 16px;
     border: 1px solid #000;
+    border-radius: 4px;
     background-color: gray;
 }
 
