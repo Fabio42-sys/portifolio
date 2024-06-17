@@ -1,102 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="icon" href="imgs/page-icon.svg"> 
-    <title>Emmet o dev</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Emmet Tech</title>
+    <link rel="icon" href="imgs/code-icon.svg" type="image/icon type">
 </head>
 
 <body>
-    <header>
-        <div class="texto-escrito">
-            <span class="texto">Olá amigo, seja bem vindo!</span>
-        </div>
-        <button>
-            <a href="#myJobs"> Meus projetos </a>
-        </button>
-        <button>
-            <a href="#tecnogias"> Tecnologias </a>
-        </button>
-        <button>
-            <a href="#">contratar</a>
-        </button>
-    </header>
 
-    <main>
-        <section id="aboutMe">
-            <div class="aboutMe">
-                <h2>Sobre mim</h2>
-                <p>Sou um programador com experiencia na area de front-end, atualemnte curso Analise e desenvolvimento
-                    de sistemas na faculdade anhanguera, programo des dos 16 anos e busco aprimorar minhas habilidade
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="Links">
+            <a href="#" class="active">About</a>
+            <a href="#">Portifolio</a>
+            <a href="#">Contact me</a>
+        </div>
+    </nav>
+
+    <div class="about">
+        <div class="left">
+            <h3>UI/UX Desinger</h3>
+            <div class="info">
+                <h2>I'm Emmet</h2>
+                <p>i craft seamless and engaing digital experiences.</p>
+                <div class="buttons">
+                    <button class="hire">
+                        Hire me
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <button class="email">
+                        Copy Email
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <a href="#" class="online">
+                <i class="fa-solid fa-circle"></i>
+                Available For Job
+            </a>
+            <img src="./imgs/ownerPic.jpeg">
+        </div>
+    </div>
+
+    <div class="works">
+        <div class="left">
+            <h3>
+                <i class="fa-solid fa-circle"></i>
+                Recent works
+            </h3>
+            <div class="works-list">
+                <div class="item">
+                    <div class="work-info">
+                        <h5 class="active">Lead Product Designers</h5>
+                        <P>2024 - Present</P>
+                    </div>
+                    <p>Figma</p>
+                </div>
+                <div class="item">
+                    <div class="work-info">
+                        <h5>Senior UI/UX Designer</h5>
+                        <p>2021 - 2023</p>
+                    </div>
+                    <p>Google</p>
+                </div>
+                <div class="item">
+                    <div class="work-info">
+                        <h5>Product Designer</h5>
+                        <p>2020 - 2021</p>
+                    </div>
+                    <p>Freelancer</p>
+                </div>
+                <div class="item">
+                    <div class="work-info">
+                        <h5>Junior UX designer</h5>
+                        <p>2018 - 2020</p>
+                    </div>
+                    <p>Startup Inc.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="item">
+                <a href="#">About My Work</a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam similique quo molestias nisi modi ipsa
+                    ea facere maxime culpa! Reiciendis fugit consectetur repudiandae deserunt libero provident
+                    necessitatibus odio perspiciatis porro.
                 </p>
             </div>
-        </section>
-        <section id="myJobs">
-            <div class="jobs">
-                <div class="anuncio">
-                    <h2> Alguns dos meus projetos </h2>
-                </div>
+            <div class="item">
+                <a href="#">Design solutions</a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, at ex!
+                </p>
+            </div>
+            <div class="item">
+                <a href="#">Responsive Design</a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, at ex!
+                </p>
+            </div>
+            <div class="item">
+                <a href="#">Rearch and Testing</a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, at ex! 
+                </p>
+            </div>
+            <div class="item">
+                <a href="#">Collaborative Projects</a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, at ex! 
+                </p>
+            </div>
+        </div>
 
-                <div class="myJobs">
-                    <img src="./imgs/login-page.png" alt="Pagina de Login">
-                    <a href="https://fabio42-sys.github.io/Pagina-de-login-2/"> Pagina de login </a>
-                    <div class="tooltip">Breve explicação sobre a página de login</div>
-                </div>
-                <div class="myJobs">
-                    <img src="./imgs/local-storage.png" alt="Local Storage">
-                    <a href="https://fabio42-sys.github.io/local-storage/"> Local storage </a>
-                    <div class="tooltip">Breve explicação sobre a página de login</div>
-                </div>
-                <div class="myJobs">
-                    <img src="./imgs/mini-game.png" alt="Mini Game">
-                    <a href="https://fabio42-sys.github.io/mini-game/"> Mini game </a>
-                    <div class="tooltip">Breve explicação sobre a página de login</div>
-                </div>
-                <div class="myJobs">
-                    <img src="./imgs/cyber-motors.png" alt="Cyber Motors">
-                    <a href="https://2023-2s-senai-sp-fe.github.io/cyber-motors-projeto/"> Cyber Motors </a>
-                    <div class="tooltip">Breve explicação sobre a página de login</div>
-                </div>
-            </div>
-        </section>
-        <section id="tecnogias">
-            <div class="tecnologias">
-                <div class="anuncio">
-                    <h3> Minhas tecnogias </h3>
-                </div>
-                <div class="icons">
-                    <img src="./imgs/html-icon.svg" alt="">
-                    <img src="./imgs/css-icon.svg" alt="">
-                    <img src="./imgs/js-icon.svg" alt="">
-                </div>
-                <div class="icons">
-                    <img src="./imgs/ts-icon.svg" alt="">
-                    <img src="./imgs/cy-icon.svg" alt="">
-                    <img src="./imgs/py-icon.svg" alt="">
-                </div>
-            </div>
-        </section>
-    </main>
+    </div>
 
     <footer>
-        <div class="end">
-            <button>
-                <img src="./imgs/linkedin.svg" class="footer-icon">
-                <a href="https://www.linkedin.com/in/fabio-luiz-269501225/">linkedin</a>
-            </button>
-            <button>
-                <img src="./imgs/github.svg" class="footer-icon">
-                <a href="https://github.com/Fabio42-sys">github</a>
-            </button>
+        <a href="#">My Portifolio</a>
+        <div class="socials">
+            <a href="#">Github</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
         </div>
+        <a href="#" class="online">
+            <i class="fa-solid fa-circle"></i>
+            Available For Job
+        </a>
     </footer>
 
-    <script src="./script.js"></script>
 </body>
 
 </html>
